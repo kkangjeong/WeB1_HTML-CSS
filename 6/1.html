@@ -1,0 +1,52 @@
+<!-- HTML 요소의 레이아웃을 결정하는 가장 중요한 속성 중 하나는 display
+모든 요소는 딱 한 개의 display 값을 갖고 있다
+display 중 대부분 inline, block 중 한가지
+inline display : <span>  <a>  <b>  <i>  <img>  <button>  
+                (가로/세로 개념 없다고생각 -> style에서 바꿔도 auto로 된다
+                -> but,할 수는 있다 (인라인인데 가로/세로 정하고 싶을 때는)
+                display: inline-block
+                width:
+                height:
+                코드 넣어서 이름 그대로 인라인(줄바꿈 안하고) 이면서 블록(가로세로 설정가능한)이도록
+                )
+block display :  <div>
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+<p>
+<nav>
+<ul>
+<li>
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-size: 38px;
+            }
+            i{
+                display: block;
+                /* inline인데 block으로 바꿀 수 있기는 하다 */
+            }
+            /* 
+            i{
+                display: inline-block;
+                width: 300px;
+                height: 300px;
+            }
+            인라인(줄바꿈 안하고) 이면서 블록(가로세로 설정가능한)이도록
+            
+            */
+        </style>
+    </head>
+    <body>
+        <!-- inline (display) : 다른 요소들과 같은 줄에 있으려는 성향 갖는다//가로 길이는 필요한 만큼만 차지//
+             block (display) : 새로운 줄에 가려는 성향//가로 길이 최대한 많이 차지하려고 한다//
+             inline-block : 인라인(줄바꿈 안하고) 이면서 블록(가로세로 설정가능한)이도록
+
+            -->
+        Hello my <i>name</i> is Kang!
+    </body>
+</html>

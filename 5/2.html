@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>상속(모두 다 되는 것은 아니다
+      //안되는 경우:margin, <a>태그의 color속성(해결법: inherit 값 사용))</title>
+  <meta charset="utf-8">
+  <style>
+      .d1 {
+    color: blue;
+    }
+    .div1 {
+    color: green;
+    }
+
+    .div2 {
+    color: orange;
+    }
+
+    .div2 a {
+    color: inherit;
+    }
+
+
+  </style>
+</head>
+<body>
+    <h4>1. 상속의 쉬운 예제</h4>
+    <div class="d1">
+        <h1>Heading 1</h1>
+        <p>Paragraph bla bla bla</p>
+      </div>
+  
+
+<br><br><br>
+    <h4>2. 태그 상속이 안된다면 </h4>
+    <div class="div1">
+        Let's go to <a href="https://google.com" target="_blank">google</a>!
+    </div>
+    <!-- a태그가 녹색으로 상속이 안된다 -->
+
+    <div class="div2">
+        Let's go to <a href="https://google.com" target="_blank">google</a>!
+    </div>
+    <!-- a태그가 주황으로 상속이 된다 -->
+
+
+</body>
+</html>

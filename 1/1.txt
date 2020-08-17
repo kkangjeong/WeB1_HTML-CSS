@@ -1,0 +1,24 @@
+첫번째
+
+여행블로그, 쇼핑몰, 재능 공유 사이트 등 스스로 만들기
+
+html에서는 <!-- --> 이게 주석이고
+css 에서는 /* */
+
+
+jsfiddle : html, css,javascript 모두 한 번에 나오고
+페이지 만들어줘서
+질문 할 때 이거 링크로 걸면 good
+
+
+
+
+
+1. 이미지
+<img src = "" width="">
+
+2. 링크
+<a href = "" target = "_blank">
+
+3. css 링크
+<link href="" rel="stylesheet">

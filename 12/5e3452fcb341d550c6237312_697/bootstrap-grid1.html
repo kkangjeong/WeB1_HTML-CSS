@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>부트스트랩) 다양한 방식으로 12칸 나누기</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <!-- 정확히 3등분 -->
+            <div class="col-4 first">first</div>
+            <div class="col-4 second">second</div>
+            <div class="col-4 third">third</div>
+        </div>
+
+        <div class="row">
+            <!-- 정확히 2등분 -->
+            <div class="col-6 first">first</div>
+            <div class="col-6 second">second</div>
+        </div>
+
+        <div class="row">
+            <!-- 1대 5 비율 -->
+            <div class="col-2 first">first</div>
+            <div class="col-10 second">second</div>
+        </div>
+
+        <div class="row">
+            <!-- 1대 2대 1 비율 -->
+            <div class="col-3 first">first</div>
+            <div class="col-6 second">second</div>
+            <div class="col-3 third">third</div>
+        </div>
+    </div>
+    </body>
+</html>
+
+<!--
+부트스트랩 : html, javascript, css 프론트 프레임워크
+사용방법) 링크 태그 복붙하기, 바디 안 맨 밑에 스크립트 태그 복붙하기 or 다운로드
+
+
+1. 부트스트랩 그리드
+
+# 기본 구성원
+
+1. 컨테이너 (container)
+2. 행 (row)
+3. 열 (column)
+
+# 기본 규칙
+
+1. 행(<div class="row">)은 꼭 컨테이너(<div class="container">) 안에 넣기
+2. 열(<div class="col">)은 꼭 행(<div class="row">) 안에 넣기(오직 열만 행의 직속 자식이 될 수 있다)
+3. 콘텐츠(우리가 그리드에 넣고 싶은 내용)는 꼭 열(<div class="col">) 안에 넣기
+
+
+# 기본 사용법
+
+부트스트랩 그리드에는 한 줄에 기본적으로 12칸의 열(column)이 있다고 생각하기
+예를 들어서 한 줄을 정확히 3등분하고 싶으면 네 칸을 차지하는 열, 세 개를 쓰면 된다
+네 칸을 사용하는 열은 <div class="col-4">
+
+-->

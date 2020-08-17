@@ -1,0 +1,16 @@
+.div1{
+    height: 500px;
+    border: 5px solid green;
+    background-image: url("../images/1.jpg");
+    background-repeat: repeat;
+    /* no-repeat이면 반복안되고 창 모두 차지하지 않는다 */
+
+    background-size: 100% 500px;
+    /* 그러나 스크롤 늘리면 사진이 찌그러진다-> cover쓰기(화면 꽉 채우면서도 비율 유지하겠다는-> 사진 짤리는 단점) */
+    background-size: cover;
+
+    /* 사진 짜르는 방법 */
+    background-position: right bottom;
+    /* 최대한 right오른쪽 나오도록 // 최대한 bottom나오도록  */
+
+}

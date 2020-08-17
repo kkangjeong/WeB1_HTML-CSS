@@ -1,0 +1,38 @@
+<!-- 모든 페이지에 똑같은 css 있을 때(여기선 귀찮아서 한 개 html만 있지만)
+    (style태그 안에 있는 게 똑같을 때)
+    코딩 한번만 하려고 -> .css파일을 한 번 만 써서 link로 연결 (이걸 추천)   -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css파일을 link로 연결하기</title>
+        <!-- 바로 밑에 주석을 빼서 .css 파일에//style태그 빼고-->
+        <!-- <style>
+            body{
+                text-align: center;
+            }
+            h2{
+                color: gray;
+            }
+            img{
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        </style> -->
+
+        <!-- css파일을 link로 연결하는 방법(rel=relation//스타일시트니까(사용자가 필요하면 제공하는 것이라서))** -->
+        <link href="css/styles.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <!-- css(style태그)바로 써도 되었었다...ㅎㅎ(어울리는 지 한 번 try해 볼 때 사용) -->
+        <h1 style="color: red; font-size: 72px;">코드잇</h1>
+        <h2>안녕하세요!</h2>
+        <p></p>
+    </body>
+</html>

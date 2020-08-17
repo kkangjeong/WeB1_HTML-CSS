@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>vertical-align</title>
+        <meta charset="utf-8">
+        <style>
+            .container{
+                background-color: orange;
+            }
+            .alex{
+                font-size: 90px;
+                background-color: pink;
+                vertical-align: top;
+                /* 핑크박스 위가 그 라인에서 가장 높은 요소(chris 있는 노란박스)의 탑에 맞춰진다 
+                + 디폴트 값이니까 x랑 ben도 올라가있는 것
+                */
+            }
+            .ben{
+                font-size: 30px;
+                background-color: lime;
+
+                /*
+                vertical-align: top;
+                초록박스 위가  그 라인에서 가장 높은 요소(alex 있는 핑크박스)의 탑에 맞춰진다*/
+          }
+            .chris{
+                font-size: 60px;
+                background-color: yellow;
+            }
+           
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        x
+        <!-- 부모요소의 baseline 보려고 -->
+        <span class="alex">alex</span>
+        <span class="ben">ben</span>
+        <span class="chris">chris</span>
+        <!-- 3개 모두의 baseline은 맞춰져있고
+           그리고 부모요소의 baseline과도 맞춰져 있다(vertical-align속성 디폴트 값이 baseline이라서) -->
+    
+        <!--  즉, baseline은 vertical-align 의 조건들을 충족시키면서
+        줄의 높이를 최소화시키는 곳에 위치한다 -->
+
+    </div>
+    </body>
+</html>

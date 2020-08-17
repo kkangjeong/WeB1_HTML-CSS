@@ -1,0 +1,121 @@
+<!-- css에서는 스타일링 해주기 위해 '선택자'사용하는 것 -->
+<!-- 더 많은 선택자 익히기 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char="utf-8">
+        <title>더 많은 선택자들 익히기</title>
+        <style>
+        /* 1. 직속 자식 : 'div1' 클래스를 갖고 있는 요소의 직속 자식 중 모든 <i> 태그 */
+        .div1 > i {
+            color: orange;
+        }
+        /* 2. 복수 선택 : 'two' 클래스를 가지고 있는 태그 모두와 'four' 클래스를 가지고 있는 태그 모두 선택 */
+        .two2, .four {
+            color: orange;
+        }
+        /* 3. 여러 조건 :  */
+        /* 'outside' 클래스를 갖고 있으면서 'one' 클래스도 갖고 있는 태그 */
+        .outside.one {
+            color: blue;
+        }
+
+        /* 'inside' 클래스를 갖고 있으면서 'two' 클래스도 갖고 있는 태그 */
+        .inside.two {
+            color: orange;
+        }
+
+        /* 4. 가상 클래스(콜론 사용하면 가상클래스 선택 가능) */
+        /* .d1의 자식인 <p> 태그 중 3번째 */
+        .d1 p:nth-child(3) {
+            color: blue;
+        }
+
+        /* .d1의 자식인 <p> 태그 중 첫 번째 */
+        .d1 p:first-child {
+            color: red;
+        }
+
+        /* .d1의 자식인 <p> 태그 중 마지막 */
+        .d1 p:last-child {
+            color: green;
+        }
+
+        /* .d1의 자식 중 마지막 자식이 아닌 <p> 태그 */
+        .d1 p:not(:last-child) {
+            font-size: 150%;
+        }
+
+        /* .d1의 자식 중 첫 번째 자식이 아닌 <p> 태그 */
+        .d1 p:not(:first-child) {
+            text-decoration: line-through;
+        }
+        
+        h1 {
+            color: orange;
+        }
+
+        /* 5. 마우스오버(hover) */
+        h1:hover {
+            color: green;
+        }
+
+        </style>
+    </head>
+    <body>
+        <h4> 1. 직속 자식 : 'div1' 클래스를 갖고 있는 요소의 직속 자식 중 모든 <i> 태그 </h4>
+
+        <i>Outside</i>
+        <div class="div1">
+          <i>Inside 1</i>
+          <p>Blah blah <i>Inside 2</i></p>
+          <i>Inside 3</i>
+        </div>
+
+<br><br><br>
+
+        <h4> 2. 복수 선택 : 'two' 클래스를 가지고 있는 태그 모두와 'four' 클래스를 가지고 있는 태그 모두 선택 </h4>
+
+        <p class="one1">Outside 1</p>
+        <p class="two2">Outside 2</p>
+        <div>
+          <p class="one1">Inside 1</p>
+          <p class="two2">Inside 2</p>
+          <p class="three3">Inside 3</p>
+          <p class="four4">Inside 4</p>
+          <p class="five5">Inside 5</p>
+        </div>
+
+<br><br><br>
+
+        <h4> 3. 여러 조건 : 'outside' 클래스를 갖고 있으면서 'one' 클래스도 갖고 있는 태그랑 <br> 
+             'inside' 클래스를 갖고 있으면서 'two' 클래스도 갖고 있는 태그 </h4>
+        <p class="outside one">Outside 1</p>
+        <p class="outside two">Outside 2</p>
+        <div>
+          <p class="inside one">Inside 1</p>
+          <p class="inside two">Inside 2</p>
+          <p class="inside three">Inside 3</p>
+          <p class="inside four">Inside 4</p>
+          <p class="inside five">Inside 5</p>
+        </div>
+
+<br><br><br>
+        <h4> 4. 가상 클래스(콜론 사용하면 가상클래스 선택 가능) </h4>
+
+        <div class="d1">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+          </div>
+
+<br><br><br>
+        <h4> 5. 마우스오버(hover) </h4>          
+        <h1>Hello World!</h1>
+
+
+    </body>
+</html>

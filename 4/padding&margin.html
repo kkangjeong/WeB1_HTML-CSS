@@ -1,0 +1,54 @@
+<!-- 실제 내용 밖에 패딩//패딩 밖에 테두리(border)// 테두리 밖이 margin(요소와 다른 요소사이 간격) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                border: 5px solid red;
+
+                /* 빨간 상자 가로/세로 길이 조절 가능*/
+                width: 500px;
+                height: 300px;
+            }
+            .p1{
+                border: 5px solid red;
+                margin-top: 100px;
+                margin-bottom: 100px;   /*요소와 다른 요소 사이 간격-> margin 사용 */
+            }
+            .p2{
+                border: 5px solid red;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                padding-left: 80px;
+                padding-right: 65px;
+
+                /* 네 줄을 한번에 써도 된다//top부터 시계방향으로 주르륵(margin 도) 
+                padding: 50px 65px 20px 80px;  */
+                
+                /* 네 값 모두 똑같으면 한 번만 쓰면 된다(margin 도)
+                padding: 50px;
+                */
+
+                /* 위/아래 모두 50px 이고, 오른쪽/왼쪽 둘 다 25px이라면(margin 도)
+                padding: 50px 25px;
+                */
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Life is Beautiful</h1>
+        <p class="p1">
+            Life Is Beautiful (Italian: La vita è bella, Italian pronunciation: [la ˈviːta ˌɛ bˈbɛlla]) is a 1997 Italian comedy-drama film directed by and starring Roberto Benigni, who co-wrote the film with Vincenzo Cerami. Benigni plays Guido Orefice, a Jewish Italian bookshop owner, who employs his fertile imagination to shield his son from the horrors of internment in a Nazi concentration camp. 
+            The film was partially inspired by the book In the End, I Beat Hitler by Rubino Romeo Salmonì and by Benigni's father, who spent two years in a German labour camp during World War II.
+        </p>
+        <p class="p2">
+            The film was a critical and financial success. It grossed over $230 million worldwide, becoming one of the highest-grossing non-English language movies of all time,[4] and received widespread acclaim (despite some criticisms of using the subject matter for comedic purposes). It won the Grand Prix at the 1998 Cannes Film Festival, 
+            nine David di Donatello Awards (including Best Film), five Nastro d'Argento Awards in Italy, two European Film Awards, and three Academy Awards (including Best Foreign Language Film and Best Actor for Benigni).
+        </p>
+        
+    </body>
+</html>

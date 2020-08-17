@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> css 우선순위 </title>
+  <meta charset="utf-8">
+  <style>
+/* 1번 */
+/* 위 */
+    h1 {
+    color: blue;
+    text-align: center;
+    }
+
+    h1 {
+    color: green;
+    }
+
+
+/* 2번 */
+    ul li:first-child #link {
+    color: green;
+    }
+
+    ul li:first-child a {
+    color: orange;
+    }
+
+  </style>
+</head>
+<body>
+    <h4> 1. 뭐가 우선시 될까 </h4>
+    <h1>Heading 1</h1>
+
+    <h4> 2. 같은 요소를 가리키지만 선택자가 다르다면, <br>
+        '명시도(specificity)'에 따라 우선 순위가 결정됩니다.<br>
+        1) 인라인 스타일 <br>
+        <!-- (인라인 스타일(태그 라인 내부에 바로 스타일 정의)/내부스타일(상단에 style태그)/외부스타일(css파일 만들어서)) -->
+        2) id가 많을 수록 <br>
+        3) class, 속성, pseudo-class(:콜론있어야)가 많을 수록 <br>
+        4) 요소가 많을 수록 <br>
+    </h4>
+
+<!-- 아래 -->
+    <ul>
+    <li><a id="link" href="#">Link 1</a></li>
+    <li><a id="link" href="#">Link 1</a></li>
+    <li><a id="link" href="#">Link 1</a></li>
+    <li><a id="link" href="#">Link 1</a></li>
+    </ul>
+
+    <!-- #link는 0(ul태그(다른 거랑 달리 밑에꺼 보는 거 맞나?)에 style없어서 0개?) / 1(위에꺼 보기) / 1(속성 1개라는데 color?) / 요소(a 아님?)가 2개 무얼 말하나? -->
+    <!-- a는 0 (ul태그에 style없어서 0개?)  / 0  / 1 (속성 1개) /요소가 3개라는데 무엇??  -->
+
+</body>
+</html>

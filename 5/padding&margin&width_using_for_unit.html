@@ -1,0 +1,44 @@
+<!-- px, rem, em, % 단위 이외에
+    padding, margin, width 단위에 사용하기
+ -->
+ <!-- rem: 상대적인 값//하지만 오직 <html> 태그의 font-size에만 영향을 받는다//2rem은 <html> 태그의 font-size의 2배 크기 
+       em: 상대적인 값//자기 자신의 font-size를 기준으로//2em은 자기 자신의 font-size의 2배 크기// 자기 자신의 font-size를 따로 정해주지 않을 경우, 상위 요소에서 상속받은 값을 기준으로//
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style>
+        /* 1. em예제 */
+        html {
+        font-size: 20px;
+        }
+
+        .container {
+        /* 자동으로 html의 font-size 20px을 상속받음(자기 자신의font-size 정해주지 않은 경우) */
+        padding-top: 2em; /* 자신의 font-size * 2 = 40px */
+        background-color: lime;
+        }
+
+        /* 2. %(퍼센트) 
+            상대적인 값
+            어느 항목에서 쓰이냐에 따라 기준이 다르게 적용된다.
+            1) font-size에서 %가 쓰일 경우, 상위 요소의 font-size에 곱해주는 방식으로 계산
+            2) margin이나 padding의 단위로 사용될 경우, 상위 요소의 width를 기준으로 계산
+                주의)세로(상하) 속성를 조절할 때에도 상위 요소의 height가 아닌 width를 기준으로 계산된다.
+        
+        
+        */
+
+
+  </style>
+</head>
+<body>
+     <!-- 1. em예제  -->
+    <div class="container">
+        Codeit
+      </div>
+
+</body>
+</html>

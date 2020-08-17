@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<title> My First Website </title>  <!-- 탭에 쓰이는 -->
+<meta charset="utf-8"> <!--내용 중에 한글 깨지지 않도록 미리 쓰는-->
+
+<h1> My First Page </h1>  <!-- 1~6 까지 있다 -->
+<h2> My best <i>actor</i> </h2>
+<h3> Hello 강하늘 </h3>
+
+<!-- 
+  <p> 1. 굵고 진하게 쓰고 싶을 때는 <b> b태그 </b> 사용 //<br>
+(추가내용) = strong 태그 (차이점 : strong 태그는 스크린리더(컴퓨터 화면 낭독 소프트웨어: 시각장애인, 노인,
+ 다문화 가정의 웹 접근성 지원하는 목적)가 글을 읽을 때 강조해서 읽는다) </p>
+<p> 2. 삐딱하게 쓰고 싶을 때는 <i> i태그 </i> 사용  //<br>
+(추가내용) = em 태그 (차이점 : em태그는 스크린리더가 강조해서 읽는다)</p> 
+-->
+
+
+<!-- 외부에서 가져온 이미지 쓸 때 -->
+<img src="https://newsimg.sedaily.com/2017/08/07/1OJNRWJMUN_1.jpg" width="200">
+<!-- width="200" 하면 가로 200에다가 세로는 자동으로// height="200"하면 세로200에다가 가로는 자동으로  -->  
+<!-- 두 개 동시에 모두 써도 되는데 깨지지 않도록 비율잘해야 -->
+
+<br>
+<br>
+<p>
+  <b>2019</b>
+  KBS 연기대상 남자 최우수상 <i>(동백꽃 필 무렵)</i>
+  <br>
+  
+  <b>2019</b>
+  KBS 연기대상 베스트 커플상 <i>(동백꽃 필 무렵)</i>
+  <br>
+  
+  <b>2019</b>
+  KBS 연기대상 네티즌상 <i>(동백꽃 필 무렵)</i>
+  <br>
+  
+  <b>2016</b>
+  SAF 연기대상 판타지드라마부문 남자 우수연기상
+  <br>
+  
+  <b>2016</b>
+  제21회 춘사영화상 신인남우상
+  <br>
+  
+  <b>2015</b>
+  제35회 황금촬영상 시상식 신인남우상
+  <br>
+  
+  <b>2014</b>
+  SBS 연기대상 뉴스타상
+  <br>
+</p>
+
+
+<a href="https://google.com" target="_blank">구글로 가는 링크</a>
+  <!-- target 속성으로 다른 탭에서 열기 한 것    -->
+
+
+<!-- 내 파일에 있는 이미지 쓸 때 -->
+<!-- <img src="ME.jpg" width="300" style="transform:rotate(270deg)"> -->
+
+
+<!-- 이미지 가운데 정렬 하고 싶을 때는 
+   img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+          
+-->
+
+<br>
+<br>
+<br>
+
+
+  <!-- 
+<h2>CSS 기초 (html은 내용 담당, css는 스타일 담당) </h2>
+css 사용하기 위해 style태그 사용해야
+
+    <style>
+    이런 형식
+    h1 {
+    font-size: 64px;
+    text-align: center;
+    } 
+  -->
+
+
+
+
+<style>
+h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+h3{
+  margin-top: 100px;
+  /* margin : 여백이라는 뜻 
+     Hello World 글자 위에 여백 생기게 하는 것
+  */
+}
+
+p i{
+  font-size: 48px;
+}
+/* i태그 쓴 게 2개인데 p태그 안에 i태그 폰트 사이즈만 바꾸고 싶으니까 */
+
+
+
+/*
+텍스트 색 하고 싶을 때는 color 속성
+
+h1{
+  color: blue;
+}
+
+
+ */
+
+</style>

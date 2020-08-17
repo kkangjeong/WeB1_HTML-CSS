@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="row"> <!-- 중첩을 위한 새로운 행 -->
+                    <div class="col-3 first">1</div>
+                    <div class="col-3 second">2</div>
+                    <div class="col-3 third">3</div>
+                    <div class="col-3 fourth">4</div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="row"> <!-- 중첩을 위한 새로운 행 -->
+                    <div class="col-3 first">5</div>
+                    <div class="col-3 second">6</div>
+                    <div class="col-3 third">7</div>
+                    <div class="col-3 fourth">8</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+
+<!--
+
+12는 상당히 많은 숫자들(1, 2, 3, 4, 6, 12)로 나누어지기 때문에 굉장히 유연해서 12사용
+
+예를 들어서 8칸으로 나누고 싶더라도 12라는 숫자의 유연함 덕분에 쉽게 할 수 있습니다. col-6를 두 개 쓰면 2등분 할 수 있고, 그 안에서 또 col-3로 4등분을 하면 8칸이 생긴다
+
+이런식으로 열을 또 여러 열로 나누는 것을 '중첩(nesting)'한다고 부릅니다. 중첩을 하기 위해서는 우선 열(<div class="col-6">) 안에 새로운 행(<div class="row">)을 쓰셔야 합니다.
+
+-->

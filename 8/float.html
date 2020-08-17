@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>float(뜨다-> 3차원 생각)</title>
+  <meta charset="utf-8">
+  <style>
+  .blue{
+      background-color: blue;
+      width: 300px;
+
+      /* 없애고 해보기 */
+      float: left;
+      /* div 태그는 width 100%차지한다
+        노란배경은 100%차지한거고 파란div가 3차원상에 떠있는 것이다
+        float 목적: 사진이 글로 둘러쌓여있을 때
+      */
+  }
+  .yellow{
+      background-color: yellow;
+  }
+  .orange{
+      background-color: orange;
+  }
+
+  </style>
+</head>
+<body>
+    <div class="blue"></div>
+    <div class="yellow">Hello World! Let's learn about floats!</div>
+    <!-- 노란부분 100%인데 글**은 파란배경옆에서 새겨진다 
+    인라인, 인라인블록(텍스트는 같은 라인에 있어서 인라인이니까)요소는 노랑부분에 갈 수 없다
+    -->
+    <div class="orange"></div>
+
+</body>
+</html>

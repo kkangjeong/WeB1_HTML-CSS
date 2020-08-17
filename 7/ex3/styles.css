@@ -1,0 +1,35 @@
+.env-div {
+  width: 500px;
+  height: 232px;
+  
+  /* 이걸 써야 */
+  position: relative;
+}
+
+.address {
+  font-family: cursive;
+  
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+/*
+이곳에 코드를 작성하세요.
+*/
+.stamp{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* 
+.stamp{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+가장 가까운 포지셔닝이 된 (조상)요소가 뭘까..?
+.env-div 포지셔닝이 안되있어서 그 위의 body 태그의 bottom: 0; right: 0;에 맞춰진다
+
+*/

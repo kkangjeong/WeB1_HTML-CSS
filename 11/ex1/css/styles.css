@@ -1,0 +1,116 @@
+/* 
+1. 왼쪽: 모바일 사이즈 (767px 이하)
+2. 가운데: 태블릿 사이즈 (768px 이상, 991px 이하)
+3. 오른쪽: 데스크탑 사이즈 (992px 이상)  */
+
+
+
+body {
+    margin: 0;
+}
+#div1{
+    background-color: #ff0000;
+    height: 60px;
+}
+#div2{
+    background-color: #ffa500;
+    height: 350px;
+}
+#div3{
+    background-color: #ffff00;
+    height: 320px;
+}
+#div4{
+    background-color: #008000;
+    height: 385px;
+}
+#div5{
+    background-color: #0000ff;
+    height: 200px;
+}
+#div6{
+    background-color: #4b0082;
+    height: 200px;
+}
+
+
+
+@media (min-width: 768px){
+    body {
+        margin: 0;
+    }
+    #div1{
+        background-color: #ff0000;
+        height: 60px;
+    }
+    #div2{
+        background-color: #ffa500;
+        height: 562px;
+        width: 100%;
+    }
+    #div3{
+        background-color: #ffff00;
+        height: 282px;
+        width: 100%;
+    }
+    #div4{
+        background-color: #008000;
+        height: 360px;
+        width: 50%;
+        float: left;
+    }
+    #div5{
+        background-color: #0000ff;
+        height: 180px;
+        width: 50%;
+        float: right;
+    }
+    #div6{
+        background-color: #4b0082;
+        height: 180px;
+        width: 50%;
+        float: right;
+    }
+}
+
+
+@media (min-width: 992px) {
+    body {
+        margin: 0;
+    }
+    #div1 {
+        background-color: #ff0000;
+        height: 60px;
+    }
+    #div2 {
+        background-color: #ffa500;
+        height: 700px;
+        width: 50%;
+        float: left;
+    }
+    #div3 {
+        background-color: #ffff00;
+        height: 350px;
+        width: 50%;
+        float: right;
+    }
+    #div4 {
+        background-color: #008000;
+        height: 350px;
+        width: 25%;
+        float: left;
+    }
+    #div5 {
+        background-color: #0000ff;
+        height: 175px;
+        width: 25%;
+        float: right;
+    }
+    #div6 {
+        background-color: #4b0082;
+        height: 175px;
+        width: 25%;
+        float: right;
+    }
+}
+

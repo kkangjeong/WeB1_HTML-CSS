@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <meta charset="utf-8">
+        <style>
+            /*
+            
+            *{
+                box-sizing: border-box;
+                너무 편해서 써놓고 시작하기
+                (디폴트 값 : content-box)
+            }
+
+             */
+            h1{
+                width: 300px;
+                height: 200px;
+                padding: 35px;
+                border: 5px solid red;
+
+                box-sizing: border-box;
+                /* padding하고 border 온전히 합쳐진 가로, 세로 계산 번거롭게 안하도록 */
+                /* padding을 넣어도 border을 넣어도 (다 합쳐진)가로, 세로 300,200이고 싶다.. -> box-sizing 사용하기 */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Life is Beautiful</h1>
+        <p class="p1">
+            Life Is Beautiful (Italian: La vita è bella, Italian pronunciation: [la ˈviːta ˌɛ bˈbɛlla]) is a 1997 Italian comedy-drama film directed by and starring Roberto Benigni, who co-wrote the film with Vincenzo Cerami. Benigni plays Guido Orefice, a Jewish Italian bookshop owner, who employs his fertile imagination to shield his son from the horrors of internment in a Nazi concentration camp. 
+            The film was partially inspired by the book In the End, I Beat Hitler by Rubino Romeo Salmonì and by Benigni's father, who spent two years in a German labour camp during World War II.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 165px;
+    height: 58px;
+    margin-top: 80px;
+}
+.all{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/* 이렇게 하는 거구나 */
+.all a{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #58595b;
+    text-decoration: none;
+    font-family:  Helvetica;
+}
+.picture{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

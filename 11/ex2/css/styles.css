@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#div1{
+  background-color: #353535;
+  height: 60px;
+}
+#first{
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  padding-top: 17px;
+  font-weight: normal;
+}
+#div2, #div4, #div5, #div6{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* div2 안의 내용들 세로 가운데 정렬해야 */
+#portfolio{
+  font-size: 16px;
+  color: #4A4A4A;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+#make{
+  font-size: 20px;
+  color: #1B1B1B;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+#context{
+  font-size: 16px;
+  color: #7A7A7A;
+  font-weight: normal;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#div2{
+  height: 350px;
+  background-image: url("../images/main_img.jpg");
+}
+#div3{
+  height: 320px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+#div4{
+  height: 385px;
+  background-image: url("../images/img1.jpg");
+}
+#div5{
+  height: 200px;
+  background-image: url("../images/img2.jpg");
+}
+th{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+table{
+  /* 세로 가운데 정렬해야  */
+  border-style: solid;
+  align-content: center;
+  border-color: white;
+  border-width: 4px;
+}
+#div6{
+  height: 200px;
+  background-image: url("../images/img3.jpg");
+}
+
+
+
+@media (min-width: 768px){
+
+  #div2{
+    height: 562px;
+    width: 100%;
+  }
+  #portfolio{
+    padding-left: 65px;
+  }
+  #make{
+    padding-left: 65px;
+  }
+  #context{
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  #div4, #div5, #div6{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: top;
+  }
+  #div3{
+    height: 282px;
+    width: 100%;
+  }
+  #div4{
+    height: 360px;
+    width: 50%;
+    float: left;
+  }
+  #div5{
+    height: 180px;
+    width: 50%;
+    float: right;
+  }
+  #div6{
+    height: 180px;
+    width: 50%;
+    float: right;
+  }
+  table{
+    margin-bottom: 63px;
+    margin-top: 63px;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  #div2 {
+    height: 700px;
+    width: 50%;
+    float: left;
+  }
+  #portfolio{
+    padding-left: 65px;
+  }
+  #make{
+    padding-left: 65px;
+  }
+  #context{
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  #div3 {
+    height: 350px;
+    width: 50%;
+    float: right;
+  }
+  #div4 {
+    height: 350px;
+    width: 25%;
+    float: left;
+  }
+  #div5 {
+    height: 175px;
+    width: 25%;
+    float: right;
+  }
+  #div6 {
+    height: 175px;
+    width: 25%;
+    float: right;
+  }
+  table{
+    margin-bottom: 63px;
+    margin-top: 63px;
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #1BBC9B;
+}
+
+.login-form {
+  background-color: #eeeff1;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* 회색 박스 가운데 정렬 -> 블록디스플레이니까 두 줄 */
+}
+
+.text-field {
+  font-size: 14px;
+  padding: 10px;
+ 
+  margin-bottom: 10px;
+
+  
+  border: none;
+  /* 그림자 없애기 */
+
+  border-radius: 5px;
+
+  
+  width: 100%;
+  /* 안했었다 */
+}
+
+.submit-btn {
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 30px;
+
+  background-color: #1bbc9b;
+  color: white;
+  border-radius: 5px;
+  border: none;
+
+  width: 100%;
+  /* 안했었다 */
+}
+
+.links {
+  text-align: center;
+  border-top: 30px;
+}
+
+.links a {
+  font-size: 12px;
+  color: #9b9b9b;
+}

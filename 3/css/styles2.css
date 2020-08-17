@@ -1,0 +1,9 @@
+@font-face{
+    src: url("../fonts/BMJUA_ttf.ttf");
+    font-family: "jua";   /* 폰트 이름 설정하는 것 */
+}
+
+p{
+    font-family: "jua";    /*위에 jua이름이랑 같아야*/
+
+}
